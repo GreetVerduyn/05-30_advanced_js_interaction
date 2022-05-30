@@ -35,8 +35,12 @@ body {
 }
 
 .carouselContainer {
-  background: royalblue;
   height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -76,6 +80,11 @@ body {
 
 .mode:hover {
   cursor: pointer;
+}
+
+.enlarged {
+  width: 500px;
+  height: 300 px;
 }
 
 /*# sourceMappingURL=style.css.map */
