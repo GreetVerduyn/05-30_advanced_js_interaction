@@ -63,6 +63,24 @@ body {
   display: block;
 }
 
+.pokemonImage {
+  width: 150px;
+  height: 150px;
+  display: none;
+  position: absolute;
+  bottom: 100px;
+}
+
+.poke {
+  position: relative;
+}
+
+.poke:hover .pokemonImage {
+  position: absolute;
+  bottom: 10px;
+  display: inline;
+}
+
 .title {
   font-size: 1.5em;
   margin-top: 100px;
