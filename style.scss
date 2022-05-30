@@ -9,6 +9,8 @@ body {
 .image {
   height: 250px;
   background: midnightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .poke {
@@ -40,13 +42,36 @@ body {
 
   height: 400px;
 
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+
+// COLLAGE
+
+.enlarged {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+}
+
+.textImage{
+  width: 500px;
+  background-color: darkgray;
+  display: none;
+}
+
+.enlarged {
+
+  .textImage {
+    padding: 2px;
+    color: white;
+    display: block;
+  }
 }
 
 
@@ -87,9 +112,4 @@ body {
 
 .mode:hover {
   cursor: pointer;
-}
-
-.enlarged {
- width: 500px;
-  height: 300 px;
 }

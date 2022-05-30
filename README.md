@@ -5,6 +5,17 @@
 - I made 3 different javascript files so (for me) it is clear witch exercise is where
 
 ### parallax carousel
+1) get 1 picture fixed in carouselcontainer by adding CSS
+2) add Javascript to switch between different images
+
+### collage
+1) give a picture an onclick event  
+2) setting the lay-out in CSS (enlarged)
+3) make the function in Javascript: add class enlarged
+4) add text to the enlarged image
+5) add a picture an onmouseleave event to make it smaler again (remove class enlarged)
+
+ 
 
 
 # Title: Advanced-JS-Interactions

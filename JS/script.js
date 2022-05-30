@@ -23,12 +23,11 @@ var kittenTimer = setInterval(function() {
 }, 5000);
 
 
-function enlarge() {
-
-    // add class enlarged for current element
+function enlarge(image) {
+        image.classList.add('enlarged');
 }
 
-function makeSmaller() {
-    // remove class enlarged for current element
+function makeSmaller(image) {
+       image.classList.remove('enlarged');
 }
 console.log(carousel.style);
