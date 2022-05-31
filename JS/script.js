@@ -7,6 +7,7 @@ function randomLetter(){
     return alphabet[Math.floor(Math.random() * alphabet.length)]
 }
 
+//CAROUSEL
 const kittenArray = ['kitten_1.jpg', 'kitten_2.jpeg', 'kitten_3.jpg'];
 let showKitten = 0;
 let carousel = document.getElementById("carouselContainer");
@@ -22,7 +23,7 @@ var kittenTimer = setInterval(function() {
 
 }, 5000);
 
-
+//COLLAGE
 function enlarge(image) {
         image.classList.add('enlarged');
 }
@@ -31,3 +32,15 @@ function makeSmaller(image) {
        image.classList.remove('enlarged');
 }
 console.log(carousel.style);
+
+//CHANGE MODE
+
+function changeMode(button){
+    const body= document.body;
+    if (body.className === "darkMode"){
+        body.className = "lightMode"
+    } else {
+        body.className = "darkMode"
+    }
+
+};

@@ -36,6 +36,12 @@ body {
   height: 350px;
 }
 
+.title {
+  font-size: 1.5em;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 //CAROUSEL
 
 .carouselContainer {
@@ -94,11 +100,7 @@ body {
   }
 }
 
-.title {
-  font-size: 1.5em;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
+//CHANGE MODE
 
 .lightMode {
   background: rgb(245, 245, 245);
@@ -109,6 +111,8 @@ body {
   background: rgb(10, 10, 10);
   color: rgb(245, 245, 245);
 }
+
+
 
 .bigTitle {
   font-size: 2.5em;

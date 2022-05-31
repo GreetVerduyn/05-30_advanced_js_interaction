@@ -4,20 +4,27 @@
 - starting: I made a new repository and copied the exercise in it.
  
 ### parallax carousel
-1) [] get 1 picture fixed in carouselcontainer by adding CSS
-2) [] add Javascript to switch between different images
+1) [x] get 1 picture fixed in carouselcontainer by adding CSS
+2) [x] add Javascript to switch between different images
 
 ### collage
-1) [] give a picture an onclick event  
-2) [] setting the lay-out in CSS (enlarged)
-3) [] make the function in Javascript: add class enlarged
-4) [] add text to the enlarged image
-5) [] add a picture an onmouseleave event to make it smaler again (remove class enlarged)
+1) [x] give a picture an onclick event  
+2) [x] setting the lay-out in CSS (enlarged)
+3) [x] make the function in Javascript: add class enlarged
+4) [x] add text to the enlarged image
+5) [x] add a picture an onmouseleave event to make it smaler again (remove class enlarged)
 
 ### Pokemons
-1) []finding images of Pokémons and add the images to the span
-2) CSS hover
-3) placing the images above the word (difficult, but I finally found how to)
+1) [x]finding images of Pokémons and add the images to the span
+2) [x]CSS hover
+3) [x]placing the images above the word (difficult, but I finally found how to)
+
+
+### change Mode
+1) make the element a button
+2) make an onclick-event in HTML
+3) make a changeMode function in JavaScript and link the classes from CSS (if... else...)
+
 
 ### red circle
 

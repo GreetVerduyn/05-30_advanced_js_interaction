@@ -36,6 +36,12 @@ body {
   height: 350px;
 }
 
+.title {
+  font-size: 1.5em;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 .carouselContainer {
   height: 400px;
   /* Create the parallax scrolling effect */
@@ -79,12 +85,6 @@ body {
   position: absolute;
   bottom: 10px;
   display: inline;
-}
-
-.title {
-  font-size: 1.5em;
-  margin-top: 100px;
-  margin-bottom: 20px;
 }
 
 .lightMode {
