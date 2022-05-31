@@ -36,6 +36,10 @@
     3) [x] make the position of the dot = position of the cursor (redDot.style.top = e.clientY + "px";
        redDot.style.left = e.clientX + "px")
 
+### red circle
+1) starting with the code of the red dot and changing it
+   1) 
+
 
 
 
