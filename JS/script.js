@@ -13,7 +13,7 @@ let showKitten = 0;
 let carousel = document.getElementById("carouselContainer");
 
 var kittenTimer = setInterval(function() {
-    console.log('timer');
+
     carousel.style.backgroundImage = "url('./MEDIA/images/" + kittenArray[showKitten] + "')";
     if (showKitten < kittenArray.length - 1) {
         showKitten += 1;
@@ -31,7 +31,7 @@ function enlarge(image) {
 function makeSmaller(image) {
        image.classList.remove('enlarged');
 }
-console.log(carousel.style);
+
 
 //CHANGE MODE
 
@@ -44,3 +44,55 @@ function changeMode(button){
     }
 
 };
+
+// RED DOT
+let redBox = document.getElementById("redBox");
+//let context = box.getContext("2d");
+let dot = document.getElementById("redDot");
+dot.style.top="10px";
+
+
+let mouseX=0;
+let mouseY=0;
+let boxPos = getPosition(redBox);
+
+
+function setMousePosition(e) {
+    mouseX= e.clientX - boxPos.x;
+    mouseY= e.clientY - boxPos.y;
+   // console.log(mouseY, mouseX)
+}
+
+function getPosition(el) {
+    let xPosition = 0;
+    let yPosition = 0;
+
+    while (el) {
+        xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+        yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
+        el = el.offsetParent;
+    }
+
+    return {
+        x: xPosition,
+        y: yPosition,
+    };
+}
+
+
+function startFollowingCursor() {
+    console.log('startFollowingCursor');
+    window.addEventListener('mousemove', mouseMove);
+}
+function stopFollowingCursor() {
+    console.log('stopFollowingCursor');
+    window.removeEventListener('mousemove', mouseMove);
+}
+
+function mouseMove(e){
+    console.log('mouseMove', e.clientX);
+    console.log('boxposition', boxPos)
+    let offsetTop = e.clientX - getPosition(redBox).x;
+    dot.style.top = offsetTop + "px";
+    dot.style.left = e.clientX + "px";
+}

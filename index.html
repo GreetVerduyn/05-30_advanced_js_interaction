@@ -130,21 +130,45 @@
         </div>
     </div>
 
-    <!--red circle-->
+    <!--RED DOT-->
     <div class="row game">
         <div class="col-12 title">See this red circle in the box? I want you to make this a chasing circle, it will run
             after your cursor as long as it is in the box!
         </div>
-        <div class="col-12 box">
-            <div class="chaser"></div>
+        <div class="col-12 box redBox" id="redBox"  onmouseenter="startFollowingCursor()" onmouseleave="stopFollowingCursor()">
+            <div class="chaser" id="redDot" ></div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="col-12 title">See this green circle in the box? I want you to make this a running circle, it will
             run away from your cursor as long as it is in the box!
         </div>
-        <div class="col-12 box">
-            <div class="runner"></div>
+        <div class="col-12 box" id="box">
+            <div class="runner" ></div>
         </div>
     </div>
+
+
     <div class="row wtf">
         <div class="col-12 title">As a final challenge, I want you to get creative! All of the following letters in the
             box are inside of spans with the same class. Based on key inputs or mouse movements I want you to make them

@@ -15,18 +15,21 @@
 5) [x] add a picture an onmouseleave event to make it smaler again (remove class enlarged)
 
 ### Pokemons
-1) [x]finding images of Pokémons and add the images to the span
-2) [x]CSS hover
-3) [x]placing the images above the word (difficult, but I finally found how to)
+1) [x] finding images of Pokémons and add the images to the span
+2) [x] CSS hover
+3) [x] placing the images above the word (difficult, but I finally found how to)
 
 
 ### change Mode
-1) make the element a button
-2) make an onclick-event in HTML
-3) make a changeMode function in JavaScript and link the classes from CSS (if... else...)
+1) [x] make the element a button
+2) [x] make an onclick-event in HTML
+3) [x] make a changeMode function in JavaScript and link the classes from CSS (if... else...)
 
 
 ### red circle
+1) find out how to start this (Google)
+   1) make position of red dot absolute
+   2) giv the dot a onmouseover-event
 
 
 

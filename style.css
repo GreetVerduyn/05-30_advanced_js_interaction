@@ -22,6 +22,7 @@ body {
   height: 50px;
   background: red;
   border-radius: 50%;
+  position: absolute;
 }
 
 .runner {
@@ -34,12 +35,20 @@ body {
 .box {
   border: 1px solid grey;
   height: 350px;
+  position: relative;
 }
 
 .title {
   font-size: 1.5em;
   margin-top: 100px;
   margin-bottom: 20px;
+}
+
+.bigTitle {
+  font-size: 2.5em;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .carouselContainer {
@@ -95,13 +104,6 @@ body {
 .darkMode {
   background: rgb(10, 10, 10);
   color: rgb(245, 245, 245);
-}
-
-.bigTitle {
-  font-size: 2.5em;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .mode {
