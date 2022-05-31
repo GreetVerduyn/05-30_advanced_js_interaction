@@ -45,54 +45,28 @@ function changeMode(button){
 
 };
 
+
 // RED DOT
 let redBox = document.getElementById("redBox");
 //let context = box.getContext("2d");
-let dot = document.getElementById("redDot");
-dot.style.top="10px";
-
-
-let mouseX=0;
-let mouseY=0;
-let boxPos = getPosition(redBox);
-
-
-function setMousePosition(e) {
-    mouseX= e.clientX - boxPos.x;
-    mouseY= e.clientY - boxPos.y;
-   // console.log(mouseY, mouseX)
-}
-
-function getPosition(el) {
-    let xPosition = 0;
-    let yPosition = 0;
-
-    while (el) {
-        xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-        yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
-        el = el.offsetParent;
-    }
-
-    return {
-        x: xPosition,
-        y: yPosition,
-    };
-}
+let redDot = document.getElementById("redDot");
+redDot.style.top="10px";
 
 
 function startFollowingCursor() {
-    console.log('startFollowingCursor');
+    redDot.style.position = 'fixed';
     window.addEventListener('mousemove', mouseMove);
+
 }
 function stopFollowingCursor() {
-    console.log('stopFollowingCursor');
+    redDot.style.position = 'absolute';
+    redDot.style.top = "10px";
+    redDot.style.left = "10px";
     window.removeEventListener('mousemove', mouseMove);
 }
 
 function mouseMove(e){
-    console.log('mouseMove', e.clientX);
-    console.log('boxposition', boxPos)
-    let offsetTop = e.clientX - getPosition(redBox).x;
-    dot.style.top = offsetTop + "px";
-    dot.style.left = e.clientX + "px";
+
+    redDot.style.top = e.clientY + "px";
+    redDot.style.left = e.clientX + "px";
 }

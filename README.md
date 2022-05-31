@@ -30,6 +30,11 @@
 1) find out how to start this (Google)
    1) make position of red dot absolute
    2) giv the dot a onmouseover-event
+2) start all over again after info Tim
+    1) [x] redDot position= absolute, box relative
+    2) [x] while entering the box with the cursor, the position changes to fixed
+    3) [x] make the position of the dot = position of the cursor (redDot.style.top = e.clientY + "px";
+       redDot.style.left = e.clientX + "px")
 
 
 
